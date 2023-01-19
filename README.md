@@ -1,8 +1,12 @@
-# brainnest-frontend-program
+# Brainnest - Frontend - Program
 
-## class 1 (jan-8)
+## Class 1
 
--   <a href="./assignments/jan-08/html"> HTML Q&A Assigment </a>
--   <a href="./assignments/jan-08/links-and-images"> Links and images Assignment </a>
--   <a href="./assignments/jan-08/lists"> Lists Assignment </a>
--   <a href="./assignments/jan-08/movies"> Main Assigment: Movies </a>
+- [HTML Q&A Assigment](assignments/jan-08/html/index.html)
+- [Links and images Assignment](assignments/jan-08/links-and-images/index.html)
+- [Lists Assignment](assignments/jan-08/lists/index.html)
+- [Main Assigment: Movies](assignments/jan-08/movies/index.html)
+
+## Class 2
+
+- [CSS Q&A Assigment](assignments/jan-15/css/index.html)
