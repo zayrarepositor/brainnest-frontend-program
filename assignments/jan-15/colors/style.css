@@ -1,0 +1,52 @@
+:root {
+  --bg: rgb(32, 31, 31);
+  --sky: hsl(207, 48%, 78%);
+  --ground: rgb(78, 68, 68);
+  --cloud: white;
+  --sun: yellow;
+  --tree: #408640;
+  --me: #9c733e;
+  --text: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  font-size: 18px;
+}
+
+.text {
+  font-size: 2em;
+}
+
+#container {
+  background-color: var(--sky);
+  border-radius: 10px;
+  text-align: center;
+  min-width: 400px;
+}
+
+#sun {
+  color: var(--sun);
+}
+
+#cloud {
+  color: var(--cloud);
+}
+#tree {
+  color: var(--tree);
+}
+
+#me {
+  color: var(--me);
+}
+
+#ground {
+  color: var(--ground);
+}
