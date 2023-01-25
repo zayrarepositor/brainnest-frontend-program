@@ -10,3 +10,5 @@
 ## Class 2
 
 - [CSS Q&A Assigment](assignments/jan-15/css/index.html)
+- [Colors](assignments/jan-15/colors/index.html)
+- [Main Assigment: Audiobooks](assignments/jan-15/main/index.html)
