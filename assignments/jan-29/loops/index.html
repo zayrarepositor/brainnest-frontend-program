@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Statements & Loops</title>
+  </head>
+  <body>
+    <header>
+      <h1>Conditional Statements & Loops</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Find greater than 2 integers</h2>
+        <label for="integer1">Integer 1:</label>
+        <input
+          type="number"
+          step="1"
+          id="integer1"
+          placeholder="Enter integer 1 value"
+        />
+        <br />
+        <label for="integer2">Integer 2:</label>
+        <input
+          type="number"
+          step="1"
+          id="integer2"
+          placeholder="Enter integer 2 value"
+        />
+        <br />
+        <button onclick="findGreater()">Find greater</button>
+        <p>Greater number: <span id="greater"></span></p>
+      </section>
+      <section>
+        <h2>Find if it is an even or odd number</h2>
+        <label for="integer">Integer:</label>
+        <input
+          type="number"
+          step="1"
+          id="integer"
+          placeholder="Enter integer value"
+        />
+        <br />
+        <button onclick="IsItEvenOrOddNumber()">Find what it is</button>
+        <p id="evenOrOdd"></p>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="text/javaScript" src="./scripts.js"></script>
+  </body>
+</html>

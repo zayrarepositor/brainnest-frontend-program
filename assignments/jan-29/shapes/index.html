@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shapes</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mathematical Shapes</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Find square diagonal</h2>
+        <label for="side">Side:</label>
+        <input type="number" id="side" placeholder="Enter side value" /> cm
+        <br />
+        <button onclick="findDiagonal()">Find square diagonal</button>
+        <p>Diagonal: <span id="diagonal"></span></p>
+      </section>
+      <section>
+        <h2>Find triangle area</h2>
+        <label for="side1">Side 1:</label>
+        <input type="number" id="side1" placeholder="Enter side 1 value" /> cm
+        <br />
+        <label for="side2">Side 2:</label>
+        <input type="number" id="side2" placeholder="Enter side 2 value" /> cm
+        <br />
+        <label for="side3">Side 3:</label>
+        <input type="number" id="side3" placeholder="Enter side 3 value" /> cm
+        <br />
+        <button onclick="findTriangleArea()">Find triangle area</button>
+        <p>Area: <span id="triangleArea"></span></p>
+      </section>
+      <section>
+        <h2>Find circumference and surface area of a circle</h2>
+        <label for="radius">Radius:</label>
+        <input type="number" id="radius" placeholder="Enter radius value" /> cm
+        <br />
+        <button onclick="findCircleInfo()">Find circle information</button>
+        <p>Circumference: <span id="circumference"></span></p>
+        <p>Area: <span id="circleArea"></span></p>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="text/javaScript" src="index.js"></script>
+  </body>
+</html>

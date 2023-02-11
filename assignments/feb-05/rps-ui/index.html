@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Rock, Paper or Scissors</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">Rock, Paper or Scissors</h1>
+    </header>
+    <main>
+      <section class="game">
+        <button id="start-game-btn" class="btn white">Start!</button>
+        <!-- player board with 3 buttons-->
+        <div id="player-board" class="hide">
+          <button id="rock-btn" class="btn black" name="rock">rock</button>
+          <button id="paper-btn" class="btn black" name="paper">paper</button>
+          <button id="scissors-btn" class="btn black" name="scissors">
+            scissors
+          </button>
+        </div>
+        <!-- display running scores, results and winner -->
+        <div id="RPS-board"></div>
+      </section>
+    </main>
+    <footer class="footer-container">
+      <ul class="footer-links">
+        <li>Zayra Velasco 2023</li>
+        <li>
+          <a href="https://github.com/zayrarepositor" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:zayra.contacto@gmail.com" target="_blank">Mail</a>
+        </li>
+      </ul>
+    </footer>
+    <script type="text/javaScript" src="index.js"></script>
+  </body>
+</html>

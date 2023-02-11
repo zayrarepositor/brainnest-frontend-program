@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JAVASCRIPT 2</title>
+  </head>
+  <body>
+    <header class="head-container">
+      <h1>Javascript 2</h1>
+    </header>
+    <main>
+      <section class="section-questions-container">
+        <h2 class="questions-title">Terminology & Definitions</h2>
+        <ol>
+          <li>
+            <p class="question">Why is it important to write clean code?</p>
+            <p>
+              Because it will be understandable across the time, by us and
+              others.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What is the difference between good comments and bad comments?
+            </p>
+            <p>
+              A good comment is a very effective way of code documentation. It’s
+              easy, fast, and very straight-to-the-point.
+            </p>
+          </li>
+          <li>
+            <p class="question">What is an array?</p>
+            <p>Arrays are a special type of objects with numbered indexes.</p>
+          </li>
+          <li>
+            <p class="question">What are arrays useful for?</p>
+            <p>
+              Storing a list of data items under a single variable name. We
+              could map arrays items and find any of them by index.
+            </p>
+          </li>
+          <li>
+            <p class="question">How do you change an array element?</p>
+            <p>
+              Assign a value at array index. Ex:
+              <code>array[2] = "Moon"</code>
+            </p>
+          </li>
+          <li>
+            <p class="question">What are some useful array properties?</p>
+            <p>
+              The <em>length</em> property of an array returns the length of an
+              array (the number of array elements).
+            </p>
+          </li>
+          <li>
+            <p class="question">What are some useful array methods?</p>
+            <ul class="list">
+              <li>push</li>
+              <li>forEach</li>
+              <li>map</li>
+              <li>filter</li>
+              <li>find</li>
+              <li>includes</li>
+            </ul>
+          </li>
+          <li>
+            <p class="question">What are loops useful for?</p>
+            <p>
+              Loops are all about doing the same thing over and over again.
+              Often, the code will be slightly different each time round the
+              loop, or the same code will run but with different variables.
+            </p>
+          </li>
+          <li>
+            <p class="question">What is the break statement?</p>
+            <p>
+              A break statement will immediately exit the loop and make the
+              browser move on to any code that follows it.
+            </p>
+          </li>
+          <li>
+            <p class="question">What is the continue statement?</p>
+            <p>It skips to the next iteration of the loop.</p>
+          </li>
+          <li>
+            <p class="question">What is the DOM?</p>
+            <p>
+              The <em>Document Object Model</em> (DOM) is the data
+              representation of the objects that comprise the structure and
+              content of a document on the web.
+            </p>
+            <p>
+              It's a cross-platform and language-independent interface that
+              treats an XML or HTML document as a tree structure wherein each
+              node is an object representing a part of the document. The DOM
+              represents a document with a logical tree.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              How do you target the nodes you want to work with?
+            </p>
+            <p>
+              We can do it using one of the multiple methods the DOM API offers
+              using the dot notation:
+            </p>
+            <ul class="list">
+              <li>getElementById</li>
+              <li>getElementsByClassName</li>
+              <li>getElementsByTagName</li>
+              <li>getElementsByName</li>
+              <li>querySelector</li>
+              <li>querySelectorAll</li>
+            </ul>
+          </li>
+          <li>
+            <p class="question">How do you create an element in the DOM?</p>
+            <p>createElement</p>
+            <pre><code>
+        const para = document.createElement("p");
+        const node = document.createTextNode("This is new.");
+        para.appendChild(node);
+
+        const element = document.getElementById("div1");
+        const child = document.getElementById("p1");
+        
+        // insert para p into element div
+        element.appendChild(para);
+        
+        // insert para p into element div, before child p
+        element.insertBefore(para,child);
+            </code></pre>
+          </li>
+          <li>
+            <p class="question">How do you add an element to the DOM?</p>
+            <p>
+              To add a new element to the HTML DOM, you must create the element
+              (element node) first, and then append it to an existing element
+              using <em>appendChild</em> method.
+            </p>
+          </li>
+          <li>
+            <p class="question">How do you remove an element from the DOM?</p>
+            <p>
+              Using the <em>removeChild</em> and <em>remove</em> methods on the
+              parent element.
+            </p>
+            <pre><code>
+        const e = document.querySelector('li:last-child');
+
+        // remove the last list item
+        e.parentElement.removeChild(e);
+
+        // hide the element
+        e.style.display = 'none';
+
+        // remove li e
+        e.remove();
+            </code></pre>
+          </li>
+          <li>
+            <p class="question">How can you alter an element in the DOM?</p>
+            <ul class="list">
+              <li>
+                <code>document.getElementById(id).innerHTML = new HTML</code>
+              </li>
+              <li>
+                <code>document.getElementById(id).attribute = new value</code>
+                <p>
+                  <small>
+                    attribute could be src, value, style.color, style.fontSize,
+                    addEventListener('click', myFunction)
+                  </small>
+                </p>
+              </li>
+              <li>
+                <code>
+                  document.getElementById(id).setAttribute("class", "example");
+                </code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="question">
+              When adding text to a DOM element, should you use textContent or
+              innerHTML?
+            </p>
+            <p>
+              TextContent gets the content of all elements, including
+              <em>script</em> and <em>style</em> elements. In contrast,
+              innerText only shows "human-readable" elements.
+            </p>
+            <p>InnerText won't return the text of "hidden" elements.</p>
+            <p>
+              innerHTML returns HTML. textContent has better performance because
+              its value is not parsed as HTML. Moreover, using textContent can
+              prevent XSS attacks.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              Where should you include your JavaScript tag in your HTML file
+              when working with DOM nodes?
+            </p>
+            <p>At the end of the body tag.</p>
+          </li>
+          <li>
+            <p class="question">How do “events” and “listeners” work?</p>
+            <p>
+              An event listener is a function that initiates a predefined
+              process if a specific event occurs. So, an event listener
+              “listens” for an action, then calls a function that performs a
+              related task. This event can take one of many forms. Common
+              examples include mouse events, keyboard events, and window events.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What are three ways to use events in your code?
+            </p>
+            <p>
+              There are three ways to assign events to elements: inline event
+              handlers, event handler properties, and event listeners.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              Why are event listeners the preferred way to handle events?
+            </p>
+
+            <p>
+              We can set multiple event listeners on the same element. It is
+              also possible to use the removeEventListener() function to remove
+              one or all events from an element. You can use addEventListener()
+              on the document and window object.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What are the benefits of using named functions in your listeners?
+            </p>
+            <p>
+              The advantage of using a named function is that it is easier to
+              remove the event listener, as you can simply reference the
+              function name.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              How do you attach listeners to groups of nodes?
+            </p>
+            <p>If you have an array with the elements you could do:</p>
+            <pre><code>
+          let elementsArray = document.querySelectorAll("whatever");
+
+          elementsArray.forEach(function(elem) {
+              elem.addEventListener("input", function() {
+                  //this function does stuff
+              });
+          });
+            </code></pre>
+          </li>
+          <li>
+            <p class="question">
+              What is the difference between the return values of querySelector
+              and querySelectorAll?
+            </p>
+            <p>
+              querySelector returns a single object with the first HTML element
+              that matches the 'selectors', but querySelectorAll() returns an
+              array of objects with all the HTML elements that match the
+              'selectors'.
+            </p>
+          </li>
+          <li>
+            <p class="question">What does a “nodelist” contain?</p>
+            <p>
+              A NodeList is a collection of document nodes (element nodes,
+              attribute nodes, and text nodes). HTMLCollection items can be
+              accessed by their name, id, or index number. NodeList items can
+              only be accessed by their index number.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              Explain the difference between “capture” and “bubbling”.
+            </p>
+            <p>
+              With bubbling, the event is first captured and handled by the
+              innermost element and then propagated to outer elements. With
+              capturing, the event is first captured by the outermost element
+              and propagated to the inner elements.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What is the difference between objects and arrays?
+            </p>
+            <p>
+              Objects represent “things” with characteristics (properties),
+              while arrays create and store lists of data in a single variable.
+            </p>
+          </li>
+          <li>
+            <p class="question">How do you access object properties?</p>
+            <ul class="list">
+              <li>Dot property accessor: object. property.</li>
+              <li>Square brackets property accessor: object['property']</li>
+              <li>Object destructuring: const { property } = object.</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer class="footer-container">
+      <ul class="footer-links">
+        <li>Zayra Velasco 2023</li>
+        <li>
+          <a href="https://github.com/zayrarepositor" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:zayra.contacto@gmail.com" target="_blank">Mail</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

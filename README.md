@@ -12,3 +12,10 @@
 - [CSS Q&A Assigment](assignments/jan-15/css/index.html)
 - [Colors](assignments/jan-15/colors/index.html)
 - [Main Assigment: Audiobooks](assignments/jan-15/main/index.html)
+
+## Class 3
+
+- [Javascript Q&A Assigment](assignments/jan-29/javascript/index.html)
+- [Mathematical Shapes](assignments/jan-29/shapes/index.html)
+- [Conditional Statements & Loops](assignments/jan-29/loops/index.html)
+- [Main Assigment: Rock, Paper or Scissors](assignments/jan-29/main/index.html)

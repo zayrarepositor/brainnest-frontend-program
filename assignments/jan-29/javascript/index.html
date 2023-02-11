@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JAVASCRIPT</title>
+  </head>
+  <body>
+    <header class="head-container">
+      <h1>Javascript</h1>
+    </header>
+    <main>
+      <section class="section-questions-container">
+        <h2 class="questions-title">Terminology & Definitions</h2>
+        <ol>
+          <li>
+            <p class="question">Name the three ways to declare a variable?</p>
+            <p><em>var</em>, <em>const</em> and <em>let</em>.</p>
+          </li>
+          <li>
+            <p class="question">
+              Which of the three variable declarations should you avoid and why?
+            </p>
+            <p><em>var</em> because it is considered a bad practice.</p>
+          </li>
+          <li>
+            <p class="question">
+              What rules should you follow when naming variables?
+            </p>
+            <p>The first character must not be a number.</p>
+            <p>
+              The name must contain only letters, numbers, "_" or "$" symbol.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What should you look out for when using the "+" operator with
+              numbers and strings?
+            </p>
+            <p>
+              Addition operator produces the sum for numbers or concatenation
+              for strings.
+            </p>
+            <p>
+              Unary plus operator before an operand convert it into a number.
+            </p>
+          </li>
+          <li>
+            <p class="question">How does the "%"" operator work?</p>
+            <p>
+              Remainder operator returns the remainder left over when one
+              operand is divided by a second operand.
+            </p>
+          </li>
+          <li>
+            <p class="question">Explain the difference between == and ===</p>
+            <p>
+              Strict equality operator (===) checks whether its two operands are
+              equal including data type.
+            </p>
+            <p>
+              Equality operator (==) checks whether its two operands are equal.
+              It attempts to convert and compare operands that are of different
+              types.
+            </p>
+          </li>
+          <li>
+            <p class="question">When would you receive a NaN result?</p>
+            <p>
+              <em>Not a number</em> is a Number property and its value is
+              anything but a number. You receive it when you can not to parse a
+              parameter in a number.
+            </p>
+          </li>
+          <li>
+            <p class="question">How do you increment and decrement a number?</p>
+            <p>Using ++ or -- operators.</p>
+          </li>
+          <li>
+            <p class="question">
+              Explain the difference between prefixing and post-fixing
+              increment/decrement operators.
+            </p>
+            <p>
+              Postfix return the value before works on. Prefix return value
+              affected by the operator.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What is operator precedence and how is it handled in JS?
+            </p>
+            <p>
+              Operator precedence determines the order in which operators are
+              evaluated relative to each other. Operators with higher precedence
+              become the operands of operators with lower precedence.
+            </p>
+          </li>
+          <li>
+            <p class="question">How do you log information to the console?</p>
+            <p>With console method <em>log</em></p>
+          </li>
+          <li>
+            <p class="question">
+              What does unary plus operator do to string representations of
+              integers?
+            </p>
+            <p>It attempts to convert it into a number.</p>
+          </li>
+          <li>
+            <p class="question">What are the eight data types in JavaScript?</p>
+            <p>
+              Null, object, undefined, boolean, number, bigInt, string and
+              symbol.
+            </p>
+          </li>
+          <li>
+            <p class="question">Which data type is NOT primitive?</p>
+            <p>Object.</p>
+          </li>
+          <li>
+            <p class="question">
+              What is the relationship between null and undefined?
+            </p>
+            <p>
+              They both are falsy and they are used by functions to return a no
+              succesful response but they are different.
+            </p>
+            <p>
+              Undefined is a data type wich means there is not value assigned.
+            </p>
+            <p>Null is a object type and it is a value assigned: null.</p>
+          </li>
+          <li>
+            <p class="question">
+              What is the difference between single, double, and backtick quotes
+              for strings?
+            </p>
+            <p>
+              Single and double quotes are not functio0nally different.
+              Backticks are used for <em>template strings</em> which allow to
+              embed js code.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What is the term for embedding variables/expressions in a string?
+            </p>
+            <p>Template literals (Template strings).</p>
+          </li>
+          <li>
+            <p class="question">
+              Which type of quote lets you embed variables/expressions in a
+              string?
+            </p>
+            <p>Backtick (`) characters.</p>
+          </li>
+          <li>
+            <p class="question">
+              How do you embed variables/expressions in a string?
+            </p>
+            <p>
+              Using brackets preceded by dollar symbol (${}). Ex: `string
+              ${embedded_variable} string`
+            </p>
+          </li>
+          <li>
+            <p class="question">How do you escape characters in a string?</p>
+            <p>Using backslash (\) in front as an escape character.</p>
+          </li>
+          <li>
+            <p class="question">
+              What is the difference between the slice/substring/substr string
+              methods?
+            </p>
+            <p>
+              The <strong>slice()</strong> method extracts a section of a
+              string. When slice() receive negative values it counts backwards
+              from the end of the string. if indexStart is greater than
+              indexEnd, slice() method returns an empty string.
+            </p>
+            <p>
+              The <strong>substring()</strong> method returns the part of the
+              string from the start index up to and excluding the end index, or
+              to the end of the string if no end index is supplied.
+            </p>
+            <p>
+              The <strong>substr()</strong> method is considered a legacy
+              feature in ECMAScript, so it is best to avoid using it if
+              possible.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What are the three logical operators and what do they stand for?
+            </p>
+            <p>
+              And (&&), Or (||) and Not (!) operators. They are used to
+              determine the logic between variables or values.
+            </p>
+          </li>
+          <li>
+            <p class="question">What are the comparison operators?</p>
+            <p>
+              Comparison operators are used in logical statements to determine
+              equality or difference between variables or values.
+            </p>
+          </li>
+          <li>
+            <p class="question">What are truthy and falsy values?</p>
+            <p>
+              All values are truthy unless they are defined as false or 0, -0,
+              0n, "", null, undefined, and NaN.
+            </p>
+          </li>
+          <li>
+            <p class="question">What are the falsy values in JavaScript?</p>
+            <p>Those values whose evaluation return false.</p>
+          </li>
+          <li>
+            <p class="question">What are conditionals?</p>
+            <p>
+              Conditional statements allow us to represent such decision making
+              in JavaScript.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What is the syntax for an if/else conditional?
+            </p>
+            <pre>
+              <code>
+              if (statement) {
+                // do something 
+              } else { 
+                // do something else 
+              }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <p class="question">What is the syntax for a switch statement?</p>
+            <pre>
+              <code>
+                switch (expression) {
+                  case value1:
+                    //Statements to execute
+                    [break;]
+                  case value2:
+                    //Statements to execute
+                    [break;]
+                  ...
+                  case valueN:
+                    //Statements to execue
+                    [break;]
+                  [default:
+                    //Statements to execute
+                    [break;]]
+                }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <p class="question">What is the syntax for a ternary operator?</p>
+            <p>
+              <code>condition ? exprIfTrue : exprIfFalse </code>
+            </p>
+          </li>
+          <li>
+            <p class="question">What is nesting?</p>
+            <p>Nesting is when you write something inside of something else.</p>
+          </li>
+          <li>
+            <p class="question">What are functions useful for?</p>
+            <p>
+              A function is similar to a procedure —a set of statements that
+              performs a task or calculates a value- but for a procedure to
+              qualify as a function, it should take some input and return an
+              output.
+            </p>
+          </li>
+          <li>
+            <p class="question">How do you invoke a function?</p>
+            <p>With () parenthesis and specified values as arguments.</p>
+          </li>
+          <li>
+            <p class="question">What are anonymous functions?</p>
+            <p>
+              It is a function that does not have any name associated with it.
+            </p>
+          </li>
+          <li>
+            <p class="question">What is function scope?</p>
+            <p>
+              It is the function context and determines the accessibility of
+              variables and other resources in the code, like functions and
+              objects. JavaScript function scopes can have two different types,
+              the locale and the global scope. Local variables are declared
+              within a function and can only be accessed within the function.
+            </p>
+          </li>
+          <li>
+            <p class="question">What are return values?</p>
+            <p>
+              A value from a function back to the code that called it by using
+              the return statement. That value can be a constant value, a
+              variable, or the result of the calculation is returned.
+            </p>
+          </li>
+          <li>
+            <p class="question">What are arrow functions?</p>
+            <p>
+              An arrow function expression is a compact alternative to a
+              traditional function expression, with some semantic differences
+              and deliberate limitations in usage.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer class="footer-container">
+      <ul class="footer-links">
+        <li>Zayra Velasco 2023</li>
+        <li>
+          <a href="https://github.com/zayrarepositor" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:zayra.contacto@gmail.com" target="_blank">Mail</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
