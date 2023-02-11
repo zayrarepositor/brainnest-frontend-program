@@ -19,3 +19,9 @@
 - [Mathematical Shapes](assignments/jan-29/shapes/index.html)
 - [Conditional Statements & Loops](assignments/jan-29/loops/index.html)
 - [Main Assigment: Rock, Paper or Scissors](assignments/jan-29/main/index.html)
+
+## Class 4
+
+- [Javascript 2 Q&A Assigment](assignments/feb-05/javascript2/index.html)
+- [Calculator](assignments/feb-05/calculator/index.html)
+- [Rock, Paper or Scissors UI](assignments/feb-05/rps-ui/index.html)
