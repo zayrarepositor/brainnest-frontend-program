@@ -36,6 +36,8 @@ class Display {
 
   enterValue(value) {
     if (value === "." && this.currentValue.includes(".")) return;
+    if (value === "0" && this.currentValue === "0") return;
+    if (this.currentValue.length > 8) return;
     this.currentValue = this.currentValue.toString() + value.toString();
     this.printValue();
   }

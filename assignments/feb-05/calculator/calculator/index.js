@@ -1,14 +1,22 @@
 class Calculator {
   add(num1, num2) {
-    return (num1 + num2).toFixed(2);
+    let result = num1 + num2;
+    if (Number.isInteger(result)) return result;
+    return result.toFixed(5);
   }
   rest(num1, num2) {
-    return (num1 - num2).toFixed(2);
+    let result = num1 - num2;
+    if (Number.isInteger(result)) return result;
+    return result.toFixed(5);
   }
   mul(num1, num2) {
-    return (num1 * num2).toFixed(2);
+    let result = num1 * num2;
+    if (Number.isInteger(result)) return result;
+    return result.toFixed(5);
   }
   div(num1, num2) {
-    return (num1 / num2).toFixed(2);
+    let result = num1 / num2;
+    if (Number.isInteger(result)) return result;
+    return result.toFixed(5);
   }
 }
