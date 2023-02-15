@@ -1,195 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>HTML</title>
-    </head>
-    <body>
-        <h1>HTML - Terminology & Definitions</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>HTML</title>
+  </head>
+  <body>
+    <header class="head-container">
+      <h1>HTML</h1>
+    </header>
+    <main>
+      <section class="section-questions-container">
+        <h2 class="questions-title">Terminology & Definitions</h2>
         <ol>
-            <li>
-                <p>What do HTML and CSS stand for?</p>
-                <p>HTML stands for Hypertext Markup Language.</p>
-                <p>CSS stands for Cascading Style Sheet.</p>
-            </li>
-            <li>
-                <p>
-                    Would you rather use HTML or CSS, for putting paragraphs of
-                    text on a webpage?
-                </p>
-                <p>HTML</p>
-            </li>
-            <li>
-                <p>
-                    Would you rather use HTML or CSS, to change the font and
-                    background color of a button?
-                </p>
+          <li>
+            <p class="question">What do HTML and CSS stand for?</p>
+            <p>HTML stands for Hypertext Markup Language.</p>
+            <p>CSS stands for Cascading Style Sheet.</p>
+          </li>
+          <li>
+            <p class="question">
+              Would you rather use HTML or CSS, for putting paragraphs of text
+              on a webpage?
+            </p>
+            <p>HTML</p>
+          </li>
+          <li>
+            <p class="question">
+              Would you rather use HTML or CSS, to change the font and
+              background color of a button?
+            </p>
+            <p>CSS</p>
+          </li>
+          <li>
+            <p class="question">What is an HTML tag?</p>
 
-                <p>CSS</p>
-            </li>
-            <li>
-                <p>What is an HTML tag?</p>
-
-                <p>
-                    An HTML tag is a piece of markup language used to indicate
-                    the beginning and end of an HTML element in an HTML
-                    document.
-                </p>
-            </li>
-            <li>
-                <p>What are the three parts of an HTML element?</p>
-                <p>
-                    An HTML element is defined by a start tag, some content, and
-                    an end tag.
-                </p>
-            </li>
-            <li>
-                What is the purpose of the doctype declaration?
-                <p>
-                    The DOCTYPE declaration is an instruction to the web browser
-                    about what version of HTML the page is written in. This
-                    ensures that the web page is parsed the same way by
-                    different web browsers.
-                </p>
-            </li>
-            <li>
-                <p>What is the HTML element?</p>
-                <p>
-                    The HTML tag represents the root of an HTML document. It is
-                    the container for all other HTML elements.
-                </p>
-            </li>
-            <li>
-                <p>What is the purpose of the head element?</p>
-                <p>
-                    The head element is a container for metadata and is placed
-                    between the HTML tag and the body tag. Metadata is data
-                    about the HTML document. Metadata is not displayed.
-                </p>
-            </li>
-            <li>
-                <p>What is the purpose of the body element?</p>
-                <p>
-                    Body tag defines the document's body. It contains all the
-                    contents of an HTML document, such as headings, paragraphs,
-                    images, hyperlinks, tables, lists, etc. Body tag must be
-                    only one in an HTML document.
-                </p>
-            </li>
-            <li>
-                <p>How do you create a paragraph in HTML?</p>
-                <p>With &lt;p&gt;&lt;/p&gt; paragraph tag.</p>
-            </li>
-            <li>
-                <p>How do you create a heading in HTML?</p>
-                <p>With the &lt;h1&gt; to &lt;h6&gt; tags.</p>
-            </li>
-            <li>
-                <p>
-                    How many different levels of headings are there and what is
-                    the difference between them?
-                </p>
-                <p>
-                    From h1 to h6. &lt;h1&gt; defines the most important
-                    heading. &lt;h6&gt; defines the least important heading.
-                </p>
-            </li>
-            <li>
-                <p>
-                    What element should you use to make text bold and important?
-                </p>
-                <p>&lt;strong&gt;&lt;/strong&gt;</p>
-            </li>
-            <li>
-                <p>
-                    What element should you use to make text italicized to add
-                    emphasis to it?
-                </p>
-                <p>&lt;em&gt;&lt;/em&gt;</p>
-            </li>
-            <li>
-                <p>
-                    What relationship does an element have with any nested
-                    elements within it?
-                </p>
-                <p>
-                    It is the father element of the inside (children) elements.
-                </p>
-            </li>
-            <li>
-                <p>
-                    What relationship do two elements have if they are at the
-                    same level of nesting?
-                </p>
-                <p>They are siblings.</p>
-            </li>
-            <li>
-                <p>How do you create HTML comments?</p>
-                <p>&lt;!-- comment --&gt;</p>
-            </li>
-            <li>
-                <p>What HTML tag is used to create an unordered list?</p>
-                <p>&lt;ul&gt;&lt;/ul&gt;</p>
-            </li>
-            <li>
-                <p>19. What HTML tag is used to create an ordered list?</p>
-                <p>&lt;ol&gt;&lt;/ol&gt;</p>
-            </li>
-            <li>
-                <p>
-                    What HTML tag is used to create list items within both
-                    unordered and ordered lists?
-                </p>
-                <p>&lt;li&gt;&lt;/li&gt;</p>
-            </li>
-            <li>
-                <p>What element is used to create a link?</p>
-                <p>&lt;a&gt;&lt;/a&gt;</p>
-            </li>
-            <li>
-                <p>What is an attribute?</p>
-                <p>
-                    HTML attributes are special words used inside the opening
-                    tag to control the element's behaviour. HTML attributes are
-                    a modifier of an HTML element type.
-                </p>
-            </li>
-            <li>
-                <p>What attribute tells links where to go?</p>
-                <p>href</p>
-            </li>
-            <li>
-                <p>
-                    What is the difference between an absolute and relative
-                    link?
-                </p>
-                <p>
-                    An absolute link provides the complete location information
-                    of your site, while a relative link only contains the
-                    location following your domain.
-                </p>
-            </li>
-            <li>
-                <p>Which element is used to display an image?</p>
-                <p>&lt;img/&gt;</p>
-            </li>
-            <li>
-                <p>What two attributes do images always need to have?</p>
-                <p>src and alt.</p>
-            </li>
-            <li>
-                <p>How do you access a parent directory in a file path?</p>
-                <p>../</p>
-            </li>
-            <li>
-                <p>
-                    What are the four main image formats that you can use for
-                    images on the web?
-                </p>
-                <p>GIF, JPG or JPEG, PNG and BMP.</p>
-            </li>
+            <p>
+              An HTML tag is a piece of markup language used to indicate the
+              beginning and end of an HTML element in an HTML document.
+            </p>
+          </li>
+          <li>
+            <p class="question">What are the three parts of an HTML element?</p>
+            <p>
+              An HTML element is defined by a start tag, some content, and an
+              end tag.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What is the purpose of the doctype declaration?
+            </p>
+            <p>
+              The DOCTYPE declaration is an instruction to the web browser about
+              what version of HTML the page is written in. This ensures that the
+              web page is parsed the same way by different web browsers.
+            </p>
+          </li>
+          <li>
+            <p class="question">What is the HTML element?</p>
+            <p>
+              The HTML tag represents the root of an HTML document. It is the
+              container for all other HTML elements.
+            </p>
+          </li>
+          <li>
+            <p class="question">What is the purpose of the head element?</p>
+            <p>
+              The head element is a container for metadata and is placed between
+              the HTML tag and the body tag. Metadata is data about the HTML
+              document. Metadata is not displayed.
+            </p>
+          </li>
+          <li>
+            <p class="question">What is the purpose of the body element?</p>
+            <p>
+              Body tag defines the document's body. It contains all the contents
+              of an HTML document, such as headings, paragraphs, images,
+              hyperlinks, tables, lists, etc. Body tag must be only one in an
+              HTML document.
+            </p>
+          </li>
+          <li>
+            <p class="question">How do you create a paragraph in HTML?</p>
+            <p>With &lt;p&gt;&lt;/p&gt; paragraph tag.</p>
+          </li>
+          <li>
+            <p class="question">How do you create a heading in HTML?</p>
+            <p>With the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+          </li>
+          <li>
+            <p class="question">
+              How many different levels of headings are there and what is the
+              difference between them?
+            </p>
+            <p>
+              From h1 to h6. &lt;h1&gt; defines the most important heading.
+              &lt;h6&gt; defines the least important heading.
+            </p>
+          </li>
+          <li>
+            <p class="question">
+              What element should you use to make text bold and important?
+            </p>
+            <p>&lt;strong&gt;&lt;/strong&gt;</p>
+          </li>
+          <li>
+            <p class="question">
+              What element should you use to make text italicized to add
+              emphasis to it?
+            </p>
+            <p>&lt;em&gt;&lt;/em&gt;</p>
+          </li>
+          <li>
+            <p class="question">
+              What relationship does an element have with any nested elements
+              within it?
+            </p>
+            <p>It is the father element of the inside (children) elements.</p>
+          </li>
+          <li>
+            <p class="question">
+              What relationship do two elements have if they are at the same
+              level of nesting?
+            </p>
+            <p>They are siblings.</p>
+          </li>
+          <li>
+            <p class="question">How do you create HTML comments?</p>
+            <p>&lt;!-- comment --&gt;</p>
+          </li>
+          <li>
+            <p class="question">
+              What HTML tag is used to create an unordered list?
+            </p>
+            <p>&lt;ul&gt;&lt;/ul&gt;</p>
+          </li>
+          <li>
+            <p class="question">
+              19. What HTML tag is used to create an ordered list?
+            </p>
+            <p>&lt;ol&gt;&lt;/ol&gt;</p>
+          </li>
+          <li>
+            <p class="question">
+              What HTML tag is used to create list items within both unordered
+              and ordered lists?
+            </p>
+            <p>&lt;li&gt;&lt;/li&gt;</p>
+          </li>
+          <li>
+            <p class="question">What element is used to create a link?</p>
+            <p>&lt;a&gt;&lt;/a&gt;</p>
+          </li>
+          <li>
+            <p class="question">What is an attribute?</p>
+            <p>
+              HTML attributes are special words used inside the opening tag to
+              control the element's behaviour. HTML attributes are a modifier of
+              an HTML element type.
+            </p>
+          </li>
+          <li>
+            <p class="question">What attribute tells links where to go?</p>
+            <p>href</p>
+          </li>
+          <li>
+            <p class="question">
+              What is the difference between an absolute and relative link?
+            </p>
+            <p>
+              An absolute link provides the complete location information of
+              your site, while a relative link only contains the location
+              following your domain.
+            </p>
+          </li>
+          <li>
+            <p class="question">Which element is used to display an image?</p>
+            <p>&lt;img/&gt;</p>
+          </li>
+          <li>
+            <p class="question">
+              What two attributes do images always need to have?
+            </p>
+            <p>src and alt.</p>
+          </li>
+          <li>
+            <p class="question">
+              How do you access a parent directory in a file path?
+            </p>
+            <p>../</p>
+          </li>
+          <li>
+            <p class="question">
+              What are the four main image formats that you can use for images
+              on the web?
+            </p>
+            <p>GIF, JPG or JPEG, PNG and BMP.</p>
+          </li>
         </ol>
-    </body>
+      </section>
+    </main>
+    <footer class="footer-container">
+      <ul class="footer-links">
+        <li>Zayra Velasco 2023</li>
+        <li>
+          <a href="https://github.com/zayrarepositor" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:zayra.contacto@gmail.com" target="_blank">Mail</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

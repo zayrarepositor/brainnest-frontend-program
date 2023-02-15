@@ -5,20 +5,21 @@
   --text: white;
 }
 
-body {
-  margin: 0;
+* {
   padding: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--bg);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   text-align: center;
   color: var(--text);
 }
 
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: var(--bg);
+}
+
 nav {
-  width: 100%;
   background-color: var(--bg-complement);
   padding: 10px;
   margin: 50px 0 100px 0;
@@ -30,6 +31,7 @@ li {
 
 a {
   color: var(--text);
+  font-weight: bolder;
 }
 
 a:hover {
@@ -41,7 +43,6 @@ ul {
 }
 
 figure {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,4 +53,14 @@ img {
   width: 300px;
   margin-bottom: 15px;
   border: 2px solid var(--bg-complement);
+}
+
+.title {
+  margin-top: 2em;
+}
+
+.footer-container {
+  background-color: var(--bg-complement);
+  padding: 1em;
+  margin-top: 1em;
 }
