@@ -4,17 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css".css">
     <title>Conditional Statements & Loops</title>
   </head>
   <body>
     <header>
-      <h1>Conditional Statements & Loops</h1>
+      <h1 class="title">Conditional Statements & Loops</h1>
     </header>
     <main>
-      <section>
+      <section class="section">
         <h2>Find greater than 2 integers</h2>
         <label for="integer1">Integer 1:</label>
         <input
+          class="input"
           type="number"
           step="1"
           id="integer1"
@@ -23,30 +31,44 @@
         <br />
         <label for="integer2">Integer 2:</label>
         <input
+          class="input"
           type="number"
           step="1"
           id="integer2"
           placeholder="Enter integer 2 value"
         />
         <br />
-        <button onclick="findGreater()">Find greater</button>
+        <button class="button" onclick="findGreater()">Find greater</button>
         <p>Greater number: <span id="greater"></span></p>
       </section>
-      <section>
+      <section class="section">
         <h2>Find if it is an even or odd number</h2>
         <label for="integer">Integer:</label>
         <input
+          class="input"
           type="number"
           step="1"
           id="integer"
           placeholder="Enter integer value"
         />
         <br />
-        <button onclick="IsItEvenOrOddNumber()">Find what it is</button>
+        <button class="button" onclick="IsItEvenOrOddNumber()">
+          Find what it is
+        </button>
         <p id="evenOrOdd"></p>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer-container">
+      <ul class="footer-links">
+        <li>Zayra Velasco 2023</li>
+        <li>
+          <a href="https://github.com/zayrarepositor" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:zayra.contacto@gmail.com" target="_blank">Mail</a>
+        </li>
+      </ul>
+    </footer>
     <script type="text/javaScript" src="./scripts.js"></script>
   </body>
 </html>

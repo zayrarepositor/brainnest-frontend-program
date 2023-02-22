@@ -4,46 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Shapes</title>
   </head>
   <body>
     <header>
-      <h1>Mathematical Shapes</h1>
+      <h1 class="title">Mathematical Shapes</h1>
     </header>
     <main>
-      <section>
+      <section class="section">
         <h2>Find square diagonal</h2>
         <label for="side">Side:</label>
-        <input type="number" id="side" placeholder="Enter side value" /> cm
+        <input
+          class="input"
+          type="number"
+          id="side"
+          placeholder="Enter side value"
+        />
+        cm
         <br />
-        <button onclick="findDiagonal()">Find square diagonal</button>
+        <button class="button" onclick="findDiagonal()">
+          Find square diagonal
+        </button>
         <p>Diagonal: <span id="diagonal"></span></p>
       </section>
-      <section>
+      <section class="section">
         <h2>Find triangle area</h2>
         <label for="side1">Side 1:</label>
-        <input type="number" id="side1" placeholder="Enter side 1 value" /> cm
+        <input
+          class="input"
+          type="number"
+          id="side1"
+          placeholder="Enter side 1 value"
+        />
+        cm
         <br />
         <label for="side2">Side 2:</label>
-        <input type="number" id="side2" placeholder="Enter side 2 value" /> cm
+        <input
+          class="input"
+          type="number"
+          id="side2"
+          placeholder="Enter side 2 value"
+        />
+        cm
         <br />
         <label for="side3">Side 3:</label>
-        <input type="number" id="side3" placeholder="Enter side 3 value" /> cm
+        <input
+          class="input"
+          type="number"
+          id="side3"
+          placeholder="Enter side 3 value"
+        />
+        cm
         <br />
-        <button onclick="findTriangleArea()">Find triangle area</button>
+        <button class="button" onclick="findTriangleArea()">
+          Find triangle area
+        </button>
         <p>Area: <span id="triangleArea"></span></p>
       </section>
-      <section>
+      <section class="section">
         <h2>Find circumference and surface area of a circle</h2>
         <label for="radius">Radius:</label>
-        <input type="number" id="radius" placeholder="Enter radius value" /> cm
+        <input
+          class="input"
+          type="number"
+          id="radius"
+          placeholder="Enter radius value"
+        />
+        cm
         <br />
-        <button onclick="findCircleInfo()">Find circle information</button>
+        <button class="button" onclick="findCircleInfo()">
+          Find circle information
+        </button>
         <p>Circumference: <span id="circumference"></span></p>
         <p>Area: <span id="circleArea"></span></p>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer-container">
+      <ul class="footer-links">
+        <li>Zayra Velasco 2023</li>
+        <li>
+          <a href="https://github.com/zayrarepositor" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:zayra.contacto@gmail.com" target="_blank">Mail</a>
+        </li>
+      </ul>
+    </footer>
     <script type="text/javaScript" src="index.js"></script>
   </body>
 </html>
